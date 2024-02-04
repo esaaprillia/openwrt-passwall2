@@ -31,7 +31,7 @@ LUCI_TITLE:=LuCI support for PassWall 2
 LUCI_PKGARCH:=all
 LUCI_DEPENDS:=+coreutils +coreutils-base64 +coreutils-nohup +curl \
 	+ip-full +libuci-lua +lua +luci-compat +luci-lib-jsonc +resolveip +tcping \
-	+v2ray-geoip +v2ray-geosite \
+	+xray-core +v2ray-core +v2ray-geoip +v2ray-geosite \
 	+unzip \
 	+PACKAGE_$(PKG_NAME)_INCLUDE_Brook:brook \
 	+PACKAGE_$(PKG_NAME)_INCLUDE_Haproxy:haproxy \
