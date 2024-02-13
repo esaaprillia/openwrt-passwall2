@@ -92,7 +92,7 @@ jobs:
           key: openwrt-sdk-21.02.7-x86-64
 
       - name: Initialization environment
-        if: steps.cache-sdk.outputs.cache-hit != 'false'
+        if: steps.cache-sdk.outputs.cache-hit != 'true'
         env:
           url_sdk: https://downloads.openwrt.org/releases/21.02.7/targets/x86/64/openwrt-sdk-21.02.7-x86-64_gcc-8.4.0_musl.Linux-x86_64.tar.xz
         run: |
