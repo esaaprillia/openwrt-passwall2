@@ -244,7 +244,7 @@ jobs:
     steps:
       - name: Initialization ${{ matrix.platform }} compile environment
         run: |
-          docker rmi `docker images -q`
+          docker rmi `docker images -q` 2> /dev/null
           sudo -E rm -rf /usr/share/dotnet /etc/mysql /etc/php /etc/apt/sources.list.d /usr/local/lib/android
           df -hT
           echo "install packages!!!!!!"
